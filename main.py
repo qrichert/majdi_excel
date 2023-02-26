@@ -234,6 +234,8 @@ def main(argv: list[str]) -> int:
     make_tab_4_in_file_b_but_not_in_a(files)
     make_tab_5_analysis(files)
 
+    del files
+
     csv_tab_files_to_excel_sheets()
 
     return 0
