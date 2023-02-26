@@ -206,6 +206,9 @@ def csv_tab_files_to_excel_sheets() -> None:
             reader: csv.reader = csv.reader(f)
             for row in reader:
                 ws.append(row)
+
+        csv_file.unlink()
+
     wb.save("out/out.xlsx")
 
 
